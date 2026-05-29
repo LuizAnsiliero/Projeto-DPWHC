@@ -1,0 +1,7 @@
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.alternates {
+    background-color: blue;
+}
