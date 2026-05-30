@@ -1,5 +1,6 @@
 :root {
     --navcolor: #1E1A1A;
+    --amareloutf: #FFBE00;
 }
 * {
     margin: 0;
@@ -52,7 +53,7 @@ nav {
 }
 
 .painels li:hover{
-    background-color: yellow;
+    background-color: var(--amareloutf);
     color: var(--navcolor);
     transition: ease-out 0.3s;
 }
@@ -76,17 +77,40 @@ nav {
     display: block;
 }
 /* ///////////////////////////////// */
-.menu {
+.sidemenu {
+    background-color: blue;
+    width: 20%;
+    height: 100vh;
+    flex-flow: row-reverse;
+}
+.buttonmenu {
     flex-flow: column nowrap;
     gap: 5px;
     margin: 5px;
-    background-color: blue;
+    margin-top: 10px;
     position: absolute;
     right: 0;
-    align-self: center;
+    background-color: var(--navcolor);
 }
-.menu div {
+.buttonmenu div {
     background-color: white;
     width: 40px;
     height: 5px;
+}
+.buttonmenu:hover div {
+    background-color: var(--amareloutf);
+}
+.menu {
+    background-color:var(--navcolor);
+    width: 0%;
+    height: 100%;
+    transition: ease-in-out 0.1s;
+    display: block;
+}
+.buttonmenu:active ~ .menu {
+    display: block;
+    width: 100%;
+}
+.menu:hover {
+    display: block;
 }
