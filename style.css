@@ -30,8 +30,7 @@ nav {
     width: 220px;
     position: absolute;
     display: block;
-    transition: height ease-in-out 0.1s;
-    content-visibility: hidden;
+    transition: height ease-in-out 0.4s;
 }
 .painels ul {
     margin-top: 20px;
@@ -44,7 +43,28 @@ nav {
     height: 100%;
     background-color: blueviolet;
     opacity: 0;
-    transition: 0.5s ease-in-out;
+    visibility: hidden;
+}
+.painels li:nth-child(1) {
+    transition: ease-in-out 0.1s;
+}
+.painels li:nth-child(2) {
+    transition: ease-in-out 0.2s;
+}
+.painels li:nth-child(3) {
+    transition: ease-in-out 0.3s;
+}
+.painels li:nth-child(4) {
+    transition: ease-in-out 0.4s;
+}
+.painels li:nth-child(5) {
+    transition: ease-in-out 0.5s;
+}
+.painels li:nth-child(6) {
+    transition: ease-in-out 0.6s;
+}
+.painels li:nth-child(7) {
+    transition: ease-in-out 0.7s;
 }
 .painels li:hover{
     background-color: yellow;
@@ -58,20 +78,17 @@ nav {
 .alternate p:hover ~ .painels {
     display: block;
     height: 100%;
-    content-visibility: visible;
-    transition: height ease-in-out 0.1s;
-    opacity: 1;
-}
-.alternate p:hover ~ .painels li{
-    opacity: 1;
-}
-.painels:hover ~ .painels li {
-    opacity: 1;
 }
 .painels:hover {
     background-color: aqua;
     display: block;
     height: 100%;
-    content-visibility: visible;
+}
+.alternate p:hover ~ .painels li {
+    opacity: 1;
+    visibility: visible;
+}
+.painels:hover li {
+    opacity: 1;
     visibility: visible;
 }
