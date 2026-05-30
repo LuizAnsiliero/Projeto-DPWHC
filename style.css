@@ -1,3 +1,6 @@
+:root {
+    --navcolor: #1E1A1A;
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +13,9 @@ nav {
     flex-flow: row nowrap;
     width: 100vw;
     height: 5vh;
-    background-color: brown;
+    background-color: var(--navcolor);
 }
 .options {
-    background-color: blue;
     width: 80vw;
     height: 20vh;
     gap: 20px;
@@ -21,57 +23,41 @@ nav {
     justify-content: start;
 }
 .alternate {
-    background-color: lightcoral;
     margin-top: 10px;
+    color: white;
 }
 .painels {
-    background-color:chocolate;
+    background-color:var(--navcolor);
     height: 0%;
     width: 220px;
     position: absolute;
     display: block;
     transition: height ease-in-out 0.4s;
+    border-radius: 10px;
 }
 .painels ul {
+    margin-left: 10px;
+    margin-right: 5px;
     margin-top: 20px;
     gap: 10px;
     align-items: start;
     flex-flow: column nowrap;
+    
 }
 .painels li {
+    list-style: none;
     width: 100%;
     height: 100%;
-    background-color: blueviolet;
-    opacity: 0;
-    visibility: hidden;
+    border-radius: 5px;
+    display: none;
 }
-.painels li:nth-child(1) {
-    transition: ease-in-out 0.1s;
-}
-.painels li:nth-child(2) {
-    transition: ease-in-out 0.2s;
-}
-.painels li:nth-child(3) {
-    transition: ease-in-out 0.3s;
-}
-.painels li:nth-child(4) {
-    transition: ease-in-out 0.4s;
-}
-.painels li:nth-child(5) {
-    transition: ease-in-out 0.5s;
-}
-.painels li:nth-child(6) {
-    transition: ease-in-out 0.6s;
-}
-.painels li:nth-child(7) {
-    transition: ease-in-out 0.7s;
-}
+
 .painels li:hover{
     background-color: yellow;
+    color: var(--navcolor);
     transition: ease-out 0.3s;
 }
 .alternate p {
-    background-color: greenyellow;
     width: 100%;
     height: 30px;
 }
@@ -80,15 +66,13 @@ nav {
     height: 100%;
 }
 .painels:hover {
-    background-color: aqua;
+    opacity: 90%;
     display: block;
     height: 100%;
 }
 .alternate p:hover ~ .painels li {
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 .painels:hover li {
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
