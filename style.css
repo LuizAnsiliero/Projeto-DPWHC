@@ -90,25 +90,25 @@ nav {
 }
 .ybox:hover ~ .painels {
     display: block;
-    height: 110%;
+    height: 115%;
 }
 .ybox:hover ~ .painels li {
     display: block;
 }
 .ybox:hover {
-    width: 100%;
+    width: 230px;
 }
 .alternate p:hover ~ .painels {
     display: block;
-    height: 110%;
+    height: 115%;
     transition: height ease-in-out 0.4s;
 }
 .alternate p:hover ~ .ybox {
-    width: 100%;
+    width: 230px;
 }
 .painels:hover {
     display: block;
-    height: 110%;
+    height: 115%;
 }
 .alternate p:hover ~ .painels li {
     display: block;
