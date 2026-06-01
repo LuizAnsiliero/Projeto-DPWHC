@@ -62,7 +62,7 @@ nav {
     height: 30px;
 }
 .ybox {
-    background-color: #FFBE00;
+    background-color: var(--amareloutf);
     width: 0%;
     height: 3px;
     transition: 0.3s ease-in;
@@ -74,6 +74,12 @@ nav {
 .ybox:hover ~ .painels {
     display: block;
     height: 100%;
+}
+.ybox:hover ~ .painels li {
+    display: block;
+}
+.ybox:hover {
+    width: 100%;
 }
 .alternate p:hover ~ .painels {
     display: block;
@@ -95,5 +101,7 @@ nav {
 .painels:hover li {
     display: block;
 }
-
+.alternate:has(.painels:hover) .ybox {
+    width: 100%;
+}
 /* //////////////endregion/////////////////// */
