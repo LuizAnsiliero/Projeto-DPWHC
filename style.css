@@ -32,7 +32,7 @@ nav {
 .painels {
     background-color:var(--navcolor);
     height: 0%;
-    width: 230px;
+    width: 240px;
     position: absolute;
     display: block;
     transition: 0s;
