@@ -96,7 +96,7 @@ nav {
     display: block;
 }
 .ybox:hover {
-    width: 230px;
+    width: 100%;
 }
 .alternate p:hover ~ .painels {
     display: block;
@@ -104,7 +104,7 @@ nav {
     transition: height ease-in-out 0.4s;
 }
 .alternate p:hover ~ .ybox {
-    width: 230px;
+    width: 100%;
 }
 .painels:hover {
     display: block;
