@@ -15,9 +15,8 @@ nav {
     width: 100vw;
     height: 5vh;
     background-color: var(--navcolor);
-    position: relative;
 }
-/* ////////Esconder para mobile://////// */
+/* region [#7c3aed12]////////Esconder para mobile://////// */
 .options {
     width: 80vw;
     height: 20vh;
@@ -76,41 +75,4 @@ nav {
 .painels:hover li {
     display: block;
 }
-/* ///////////////////////////////// */
-.sidemenu {
-    background-color: blue;
-    width: 20%;
-    height: 100vh;
-    flex-flow: row-reverse;
-}
-.buttonmenu {
-    flex-flow: column nowrap;
-    gap: 5px;
-    margin: 5px;
-    margin-top: 10px;
-    position: absolute;
-    right: 0;
-    background-color: var(--navcolor);
-}
-.buttonmenu div {
-    background-color: white;
-    width: 40px;
-    height: 5px;
-}
-.buttonmenu:hover div {
-    background-color: var(--amareloutf);
-}
-.menu {
-    background-color:var(--navcolor);
-    width: 0%;
-    height: 100%;
-    transition: ease-in-out 0.1s;
-    display: block;
-}
-.buttonmenu:active ~ .menu {
-    display: block;
-    width: 100%;
-}
-.menu:hover {
-    display: block;
-}
+/* //////////////endregion/////////////////// */
