@@ -27,6 +27,7 @@ nav {
 .alternate {
     margin-top: 10px;
     color: rgb(255, 255, 255);
+    position: relative;
 }
 .painels {
     background-color:var(--navcolor);
@@ -34,7 +35,6 @@ nav {
     width: 230px;
     position: absolute;
     display: block;
-    
     transition: 0s;
     border-radius: 10px;
 }
@@ -67,6 +67,13 @@ nav {
     height: 3px;
     transition: 0.3s ease-in;
     justify-self: end;
+    position:absolute;
+    z-index: 100;
+    margin-top: -5px;
+}
+.ybox:hover ~ .painels {
+    display: block;
+    height: 100%;
 }
 .alternate p:hover ~ .painels {
     display: block;
@@ -88,4 +95,5 @@ nav {
 .painels:hover li {
     display: block;
 }
+
 /* //////////////endregion/////////////////// */
