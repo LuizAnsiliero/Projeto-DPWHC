@@ -32,7 +32,7 @@ nav {
 .painels {
     background-color:var(--navcolor);
     height: 0%;
-    width: 240px;
+    width: 250px;
     position: absolute;
     display: block;
     transition: 0s;
@@ -62,7 +62,6 @@ nav {
 }
 
 .painels li:hover{
-    color: var(--amareloutf);
     transition: ease-out 0.1s;
     border-width: 5px;
     border: solid;
@@ -72,7 +71,7 @@ nav {
     border-top: none;
     margin-top: 2px;
     margin-bottom: 2px;
-
+    font-weight: bolder;
 }
 .alternate p {
     width: 100%;
