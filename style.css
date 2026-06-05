@@ -1,6 +1,7 @@
 :root {
     --navcolor: #1E1A1A;
     --amareloutf: #FFBE00;
+    --white: #ffffff;
 }
 * {
     margin: 0;
@@ -26,7 +27,7 @@ nav {
 }
 .alternate {
     margin-top: 10px;
-    color: rgb(255, 255, 255);
+    color:var(--white);
     position: relative;
 }
 .painels {
