@@ -121,3 +121,15 @@ nav {
     width: 100%;
 }
 /* //////////////endregion/////////////////// */
+/*region [#0891b212]*/
+.menu {
+    background-color: aqua ;
+    
+}
+#checkmenu {
+    display: none;
+}
+.icon div{
+    background-color: var(--white);
+
+}

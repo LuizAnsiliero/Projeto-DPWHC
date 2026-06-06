@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 
+<!-- 
 //////////Colored Regions//////////
-        #65a30d12   verde
-        #0891b212   azul
-        #db277712   rosa
-        #ca8a0412   laranja
-        #dc262612   vermelho
-        #7c3aed12   roxo
-    -->
-    <!--#region [#7c3aed12]////////////////Nav////////////////-->
+#65a30d12   verde
+#0891b212   azul
+#db277712   rosa
+#ca8a0412   laranja
+#dc262612   vermelho
+#7c3aed12   roxo
+-->
     <nav class="flex">
         imagem aqui
+<!--#region [#7c3aed12]////////////////Altenates////////////////-->
         <section class="options flex">
             <article class="alternate">
                 <p> Minha área </p>
                 <div class="ybox flex"></div>
-                <div id="myarea" class="painels">
+                <article id="myarea" class="painels">
                     <ul class="flex">
                         <li>Atualização cadastral</li>
                         <li>Boletim</li>
@@ -33,12 +33,12 @@
                         <li>Pasta do Aluno</li>
                         <li>Relatório de refeições</li>
                     </ul>
-                </div>
+                </article>
             </article>
             <article class="alternate">
                 <p>curso</p>
                 <div class="ybox flex"></div>
-                <div id="course" class="painels">
+                <article id="course" class="painels">
                     <ul class="flex">
                         <li>Disciplinas matriculadas</li>
                         <li>Cancelamento misciplina</li>
@@ -47,47 +47,58 @@
                         <li>Reopção de curso</li>
                         <li>Minha Biblioteca</li>
                     </ul>
-                </div>
+                </article>
             </article>
             <article class="alternate">
                 <p>Documentos e Declarações</p>
                 <div class="ybox flex"></div>
-                <div id="Docs&dec" class="painels">
+                <article id="Docsdec" class="painels">
                     <ul class="flex">
                         <li>Documentos</li>
                         <li>Documentos disponibilizados</li>
                         <li>Formulário</li>
                         <li>Requerimento online</li>
                     </ul>
-                </div>
+                </article>
             </article>
             <article class="alternate">
                 <p>Inscrições e Auxílios</p>
                 <div class="ybox flex"></div>
-                <div id="Ins&aux" class="painels">
+                <article id="Insaux" class="painels">
                     <ul class="flex">
                         <li>Cadastro de bicicletas</li>
                         <li>Auxílio estudantil</li>
                         <li>Monitoria</li>
                     </ul>
-                </div>
+                </article>
             </article>
             <article class="alternate">
                 <p>Setores e Professores</p>
                 <div class="ybox flex"></div>
-                <div id="Sec&Pro" class="painels">
+                <article id="SecPro" class="painels">
                     <ul class="flex">
                         <li>Mapa de professores</li>
                         <li>Avaliação do professor</li>
                         <li>Avaliação dos setores</li>
                         <li>Rel. aval. Docente</li>
                     </ul>
-                </div>
-            </article>
-        </section>  <!-- versão 11-->
-        <!-- ////////////////#endregion////////////////-->
-    
-    
+                </article>
+            </article> <!-- versão 11-->
+        </section>  
+<!-- ////////////////#endregion////////////////-->
+<!--region[#0891b212]////////////////Menu//////////////// -->
+        <section class="menu">
+            <input type="checkbox" name="checkmenu" id="checkmenu">
+            <label for="checkmenu" class="icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <section class="sidebar">
+
+            </section>
+        </section>
+<!-- ////////////////#endregion////////////////-->
     </nav>
     <main>
 
